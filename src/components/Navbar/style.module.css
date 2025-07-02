@@ -1,0 +1,65 @@
+/** @format */
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 60px;
+  background-color: white;
+  box-shadow: 0px 4px 7px hsla(0, 0%, 0%, 0.09);
+  position: fixed;
+  width: -webkit-fill-available;
+  z-index: 1000;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--font-lato);
+  color: var(--color-text);
+}
+
+.nav ul li {
+  cursor: pointer;
+  position: relative; /* Required for positioning the pseudo-element */
+}
+
+/* .nav ul li:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--color-orange);
+  color: var(--color-orange);
+} */
+
+.nav ul li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  top: 20px;
+  height: 2px;
+  margin-top: 5px;
+  background-color: var(--color-yellow);
+  color: var(--color-purple);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav ul li:hover::after {
+  width: 100%;
+  left: 0;
+  color: var(--color-purple);
+}
+
+.nav button {
+  padding: 12px 24px;
+  border: 0;
+  font-family: var(--font-lato);
+  color: var(--color-purple);
+  background-color: var(--color-yellow);
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 700;
+}

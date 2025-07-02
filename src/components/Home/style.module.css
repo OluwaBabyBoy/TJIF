@@ -1,0 +1,73 @@
+/** @format */
+
+.home {
+  position: relative;
+  top: 40px;
+  background-image: linear-gradient(180deg, #fffaf4 0%, #fdf5ff 100%);
+
+  background-color: #fefbf9;
+  padding: 100px;
+  display: flex;
+  gap: 32px;
+}
+
+.home img {
+  width: 500px;
+  border-radius: 350px;
+}
+
+.home > div {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.home h2 {
+  margin: 0;
+  font-size: 65px;
+  color: var(--color-text);
+  font-weight: 600;
+  font-family: var(--font-sansita);
+  width: 100%;
+}
+
+.home h2 span {
+  color: var(--color-yellow);
+}
+
+.home p {
+  margin: 0;
+  font-size: 18px;
+  color: var(--color-text);
+  font-weight: 400;
+  font-family: var(--font-lato);
+  width: 67%;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.impact {
+  padding: 12px 24px;
+  border-radius: 24px;
+  background-color: var(--color-yellow);
+  color: var(--color-purple);
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--font-lato);
+  border: none;
+  cursor: pointer;
+}
+.mission {
+  padding: 12px 24px;
+  border-radius: 24px;
+  background-color: transparent;
+  color: var(--color-yellow);
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--font-lato);
+  border: 1px solid var(--color-yellow);
+  cursor: pointer;
+}
