@@ -1,6 +1,21 @@
 /** @format */
 
-.about > h2 {
+.program {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.container > h2 {
   margin: 0;
   font-size: 45px;
   font-weight: 700;
@@ -10,7 +25,7 @@
   position: relative;
 }
 
-.about h2::after {
+.container h2::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -21,4 +36,180 @@
   color: var(--color-purple);
   transition: width 0.3s ease, left 0.3s ease;
   right: 45%;
+}
+
+.container p {
+  margin: 0;
+  font-size: 24px;
+  width: 75%;
+  text-align: center;
+  font-weight: 600;
+  color: var(--color-text);
+  font-family: var(--font-lato);
+  margin-top: 30px;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.span,
+.active {
+  padding: 16px 24px;
+  background-color: hsla(0, 0%, 93%, 1);
+  border-radius: 60px;
+  font-size: 16px;
+  color: var(--color-text);
+  font-weight: 600;
+  font-family: var(--font-lato);
+  cursor: pointer;
+}
+
+.active {
+  background-color: var(--color-purple);
+  color: white;
+}
+
+.container3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.div {
+  background-color: var(--color-purple);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 7px hsla(0, 4%, 0%, 0.09);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.div:hover {
+  transform: translateY(-10px);
+}
+
+.div:nth-of-type(even) {
+  background-color: var(--color-yellow);
+}
+
+.div svg {
+  width: 200px;
+  height: 150px;
+  opacity: 0.2;
+}
+
+.div2 {
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.svg {
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 25px;
+  gap: 8px;
+}
+
+.span2 {
+  background-color: white;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: -webkit-fill-available;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.span2 span {
+  font-size: 15px;
+  color: var(--color-text);
+  font-family: var(--font-lato);
+  font-weight: 400;
+}
+
+.text label {
+  padding: 4px 8px;
+  background-color: var(--color-yellow);
+  width: fit-content;
+  border-radius: 35px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-purple);
+  font-family: var(--font-lato);
+}
+
+.text span {
+  font-size: 18px;
+  font-family: var(--font-sansita);
+  font-weight: 600;
+  color: white;
+}
+
+.div:nth-of-type(even) .text label {
+  background-color: white !important;
+  color: var(--color-purple);
+}
+
+.div:nth-of-type(even) .text span {
+  color: var(--color-purple);
+}
+
+.progress {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.progress p,
+.span2 p {
+  margin: 0;
+  font-size: 16px;
+  font-family: var(--font-lato);
+  color: var(--color-purple);
+  font-weight: 700;
+}
+
+.span2 p {
+  color: var(--color-text);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.bar {
+  width: 100%;
+  height: 10px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right,
+    var(--color-yellow),
+    var(--color-purple)
+  );
+  transition: width 0.3s ease;
 }
