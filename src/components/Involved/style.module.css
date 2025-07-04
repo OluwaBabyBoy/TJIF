@@ -1,0 +1,239 @@
+/** @format */
+
+.involve {
+  padding: 50px;
+  background-color: var(--color-primary2);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container > h2 {
+  margin: 0;
+  font-size: 45px;
+  font-weight: 700;
+  color: var(--color-purple);
+  font-family: var(--font-sansita);
+  text-align: center;
+  position: relative;
+}
+
+.container h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 95px;
+  top: 61px;
+  height: 4px;
+  background-color: var(--color-yellow);
+  color: var(--color-purple);
+  transition: width 0.3s ease, left 0.3s ease;
+  right: 45%;
+}
+
+.container p {
+  margin: 0;
+  font-size: 24px;
+  width: 75%;
+  text-align: center;
+  font-weight: 600;
+  color: var(--color-text);
+  font-family: var(--font-lato);
+  margin-top: 30px;
+}
+
+.div {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.container2 {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  background-color: var(--color-purple);
+  border-radius: 16px;
+  box-shadow: 0px 4px 7px hsla(0, 0%, 0%, 0.09);
+}
+
+.container2:nth-of-type(even) {
+  background-color: var(--color-yellow);
+  border-radius: 16px;
+}
+
+.container2:nth-of-type(even) .text button {
+  background-color: var(--color-yellow);
+  color: var(--color-purple);
+}
+
+.svg {
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.svg svg {
+  width: 100px;
+  height: 100px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: white;
+  padding: 8px 24px 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  height: -webkit-fill-available;
+}
+
+.text button {
+  padding: 8px 12px;
+  border-radius: 25px;
+  border: none;
+  background-color: var(--color-purple);
+  color: white;
+  font-size: 16px;
+  font-family: var(--font-lato);
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.container2 h4 {
+  font-size: 30px;
+  margin: 0;
+  margin-top: 20px;
+  color: var(--color-purple);
+  font-family: var(--font-sansita);
+}
+
+.container2 > span,
+.text span {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text);
+  font-weight: 400;
+  font-family: var(--font-lato);
+}
+
+.donate {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.donate div {
+  background-color: var(--color-primary2);
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+  font-family: var(--font-lato);
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.data div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/*Transform.jsx*/
+
+.transform {
+  margin-top: 50px;
+  /* padding: 24px; */
+  display: flex;
+  align-items: center;
+  width: -webkit-fill-available;
+  position: relative;
+  /* background-color: var(--color-purple); */
+}
+
+.lives {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-purple);
+  padding: 50px;
+  gap: 32px;
+  width: -webkit-fill-available;
+  border-radius: 16px;
+}
+
+.lives h2 {
+  margin: 0;
+  font-size: 35px;
+  color: white;
+  font-family: var(--font-sansita);
+}
+
+.lives span {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  width: 60%;
+  font-family: var(--font-lato);
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.impact {
+  padding: 12px 24px;
+  border-radius: 24px;
+  background-color: var(--color-yellow);
+  color: var(--color-purple);
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--font-lato);
+  border: none;
+  cursor: pointer;
+}
+.mission {
+  padding: 12px 24px;
+  border-radius: 24px;
+  background-color: transparent;
+  color: var(--color-yellow);
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--font-lato);
+  border: 1px solid var(--color-yellow);
+  cursor: pointer;
+}
+
+.svg2 {
+  background-color: #341539;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 97px 160px;
+  position: absolute;
+  right: 0;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.svg2 svg {
+  width: 100px;
+  height: 100px;
+}

@@ -7,6 +7,7 @@ import Home from "./components/Home/Home";
 import Reach from "./components/Reach/Reach";
 import About from "./components/About/About";
 import Programs from "./components/Programs/Programs";
+import Involve from "./components/Involved/Involve";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <Reach />
       <About />
       <Programs />
+      <Involve />
     </>
   );
 }
