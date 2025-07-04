@@ -1,0 +1,133 @@
+/** @format */
+
+.contact {
+  padding: 50px;
+  background-color: var(--color-primary2);
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container > h2 {
+  margin: 0;
+  font-size: 45px;
+  font-weight: 700;
+  color: var(--color-purple);
+  font-family: var(--font-sansita);
+  text-align: center;
+  position: relative;
+}
+
+.container h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 95px;
+  top: 61px;
+  height: 4px;
+  background-color: var(--color-yellow);
+  color: var(--color-purple);
+  transition: width 0.3s ease, left 0.3s ease;
+  right: 45%;
+}
+
+.container p {
+  margin: 0;
+  font-size: 24px;
+  width: 75%;
+  text-align: center;
+  font-weight: 600;
+  color: var(--color-text);
+  font-family: var(--font-lato);
+  margin-top: 30px;
+}
+
+.message {
+  padding: 32px 24px;
+  background-color: white;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 7px hsla(0, 0%, 0%, 0.09);
+}
+
+.message h2 {
+  font-size: 24px;
+  font-family: var(--font-sansita);
+  color: var(--color-purple);
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.div {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.div div,
+.email {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.div div label,
+.email label {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text);
+  font-family: var(--font-lato);
+}
+
+.div div input,
+.email input,
+.email textarea {
+  padding: 16px 40px;
+  border: 1px solid hsla(0, 0%, 87%, 1);
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: var(--font-lato);
+  font-weight: 500;
+  resize: none;
+}
+
+.email textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.form button {
+  padding: 12px 24px;
+  width: fit-content;
+  border: none;
+  background-color: var(--color-purple);
+  font-size: 18px;
+  font-family: var(--font-sansita);
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.email input,
+.email textarea:focus {
+  outline: none;
+}
+
+.div div input,
+.email input::placeholder {
+  font-weight: 700;
+}

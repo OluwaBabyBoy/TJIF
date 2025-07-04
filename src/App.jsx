@@ -8,6 +8,7 @@ import Reach from "./components/Reach/Reach";
 import About from "./components/About/About";
 import Programs from "./components/Programs/Programs";
 import Involve from "./components/Involved/Involve";
+import Contact from "./components/Contact/Contact";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
       <About />
       <Programs />
       <Involve />
+      <Contact />
     </>
   );
 }
