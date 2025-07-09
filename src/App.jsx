@@ -19,7 +19,7 @@ export default function App() {
       <NavBar />
 
       <Routes>
-        <Route path='/TJIF' element={<Home />} />
+        <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
 
         <Route path='/programs' element={<Programs />} />

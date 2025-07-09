@@ -10,7 +10,7 @@ export default function NavBar() {
       TJIF
       <ul>
         <li>
-          <Link to='/TJIF'>Home</Link>
+          <Link to='/'>Home</Link>
         </li>
         <li>
           <Link to='/about'>About Us</Link>
