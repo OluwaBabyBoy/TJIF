@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import styles from "./style.module.css";
 
-export default function Programs() {
+export default function Programs({ program }) {
   const [active, setActive] = useState("program");
 
   const Information = [
@@ -35,7 +35,7 @@ export default function Programs() {
     },
   ];
   return (
-    <div className={styles.program}>
+    <div className={styles.program} ref={program}>
       <div className={styles.container}>
         <h2>Our Programs & Initiatives</h2>
         <p>

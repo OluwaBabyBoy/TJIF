@@ -4,7 +4,7 @@ import React from "react";
 import styles from "./style.module.css";
 import Transform from "./Transform";
 
-export default function Involve() {
+export default function Involve({ involve }) {
   const Involve = [
     {
       h4: "Volunteer",
@@ -40,7 +40,7 @@ export default function Involve() {
     },
   ];
   return (
-    <div className={styles.involve}>
+    <div className={styles.involve} ref={involve}>
       <div className={styles.container}>
         <h2>Get Involved</h2>
         <p>

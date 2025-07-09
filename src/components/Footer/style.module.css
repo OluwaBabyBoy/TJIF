@@ -1,0 +1,28 @@
+/** @format */
+
+.footer {
+  padding: 24px 150px;
+  background-color: #341539;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.quicks {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.svg {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

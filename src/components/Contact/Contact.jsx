@@ -3,12 +3,12 @@
 import React from "react";
 import styles from "./style.module.css";
 
-export default function Contact() {
+export default function Contact({ contact }) {
   function Submit(e) {
     e.preventDefault();
   }
   return (
-    <div className={styles.contact}>
+    <div className={styles.contact} ref={contact}>
       <div className={styles.container}>
         <h2>Contact Us</h2>
         <p>

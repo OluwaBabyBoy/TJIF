@@ -3,19 +3,27 @@
 import React from "react";
 import styles from "./style.module.css";
 
-export default function NavBar() {
+export default function NavBar({
+  scrollTo,
+  home,
+  about,
+  involve,
+  program,
+  blog,
+  contact,
+}) {
   return (
     <nav className={styles.nav}>
       TJIF
       <ul>
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Programs</li>
-        <li>Get Involved</li>
-        <li>Blog</li>
-        <li>Contact</li>
+        <li onClick={() => scrollTo(home)}>Home</li>
+        <li onClick={() => scrollTo(about)}>About Us</li>
+        <li onClick={() => scrollTo(program)}>Programs</li>
+        <li onClick={() => scrollTo(involve)}>Get Involved</li>
+        <li onClick={() => scrollTo(blog)}>Blog</li>
+        <li onClick={() => scrollTo(contact)}>Contact</li>
       </ul>
-      <button>Donate Now</button>
+      <button onClick={() => scrollTo(involve)}>Donate Now</button>
     </nav>
   );
 }

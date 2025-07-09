@@ -4,9 +4,9 @@ import React from "react";
 import styles from "./style.module.css";
 import image from "../../assets/image2.png";
 
-export default function Home() {
+export default function Home({ home }) {
   return (
-    <div className={styles.home}>
+    <div className={styles.home} ref={home}>
       <div>
         <h2>
           {" "}
