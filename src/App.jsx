@@ -27,7 +27,9 @@ export default function App() {
       behavior: "smooth",
     });
   };
-
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
   return (
     <>
       <NavBar
