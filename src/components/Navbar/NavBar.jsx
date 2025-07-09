@@ -11,6 +11,7 @@ export default function NavBar({
   program,
   blog,
   contact,
+  scrollDonate,
 }) {
   return (
     <nav className={styles.nav}>
@@ -23,7 +24,7 @@ export default function NavBar({
         <li onClick={() => scrollTo(blog)}>Blog</li>
         <li onClick={() => scrollTo(contact)}>Contact</li>
       </ul>
-      <button onClick={() => scrollTo(involve)}>Donate Now</button>
+      <button onClick={() => scrollDonate(involve)}>Donate Now</button>
     </nav>
   );
 }

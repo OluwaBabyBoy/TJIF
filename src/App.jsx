@@ -30,6 +30,13 @@ export default function App() {
   useEffect(() => {
     window.scroll(0, 0);
   }, []);
+
+  const scrollDonate = (elementDonate) => {
+    window.scrollTo({
+      top: elementDonate.current.offsetTop + 150,
+      behavior: "smooth",
+    });
+  };
   return (
     <>
       <NavBar
@@ -40,6 +47,7 @@ export default function App() {
         blog={blog}
         contact={contact}
         involve={involve}
+        scrollDonate={scrollDonate}
       />
       <Home home={home} />
       <Reach />
