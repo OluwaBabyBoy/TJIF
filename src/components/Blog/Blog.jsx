@@ -1,9 +1,11 @@
 /** @format */
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./style.module.css";
 
-export default function Blog({ blog }) {
+export default function Blog() {
+  useEffect(() => window.scroll(0, 0));
+
   const [active, setActive] = useState("program");
 
   const Information = [
@@ -85,7 +87,7 @@ export default function Blog({ blog }) {
     },
   ];
   return (
-    <div className={styles.program} ref={blog}>
+    <div className={styles.program}>
       <div className={styles.container}>
         <h2>Latest News & Stories</h2>
         <p>

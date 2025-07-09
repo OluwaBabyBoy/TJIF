@@ -1,13 +1,15 @@
 /** @format */
 
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./style.module.css";
 import Vision from "./Vision";
 import Leadership from "./Leadership";
 
-export default function About({ about }) {
+export default function About() {
+  useEffect(() => window.scroll(0, 0));
+
   return (
-    <div className={styles.about} ref={about}>
+    <div className={styles.about}>
       <h2>About TJIF Foundation</h2>
       <p>
         For over two decades, we've been committed to creating sustainable

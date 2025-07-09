@@ -1,10 +1,12 @@
 /** @format */
 
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./style.module.css";
 import Transform from "./Transform";
 
-export default function Involve({ involve }) {
+export default function Involve() {
+  useEffect(() => window.scroll(0, 0));
+
   const Involve = [
     {
       h4: "Volunteer",
@@ -40,7 +42,7 @@ export default function Involve({ involve }) {
     },
   ];
   return (
-    <div className={styles.involve} ref={involve}>
+    <div className={styles.involve}>
       <div className={styles.container}>
         <h2>Get Involved</h2>
         <p>

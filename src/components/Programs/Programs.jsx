@@ -1,9 +1,11 @@
 /** @format */
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./style.module.css";
 
-export default function Programs({ program }) {
+export default function Programs() {
+  useEffect(() => window.scroll(0, 0));
+
   const [active, setActive] = useState("program");
 
   const Information = [
@@ -35,7 +37,7 @@ export default function Programs({ program }) {
     },
   ];
   return (
-    <div className={styles.program} ref={program}>
+    <div className={styles.program}>
       <div className={styles.container}>
         <h2>Our Programs & Initiatives</h2>
         <p>
