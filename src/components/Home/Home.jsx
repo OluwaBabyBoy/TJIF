@@ -34,12 +34,12 @@ export default function Home() {
 
         <img src={image} alt='' />
       </div>
-      <Reach />
+      {/* <Reach />
       <About />
       <Programs />
       <Involve />
       <Blog />
-      <Contact />
+      <Contact /> */}
     </>
   );
 }
