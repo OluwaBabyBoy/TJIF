@@ -82,8 +82,9 @@
 }
 
 .container3 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 32px;
 }
 
@@ -96,6 +97,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   height: fit-content;
+  width: 370px;
 }
 
 .div:nth-of-type(even) {
@@ -147,7 +149,7 @@
 }
 
 .span2 h2 {
-  font-size: 20px;
+  font-size: 22px;
   color: var(--color-purple);
   font-family: var(--font-sansita);
 }
@@ -238,5 +240,9 @@
     width: -webkit-fill-available;
     font-size: 16px;
     margin-top: 10px;
+  }
+
+  .span2 span {
+    font-size: 18px;
   }
 }

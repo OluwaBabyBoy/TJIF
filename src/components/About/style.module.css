@@ -170,8 +170,9 @@
 .flexContainer {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 32px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .flex:nth-of-type(odd) {
@@ -180,6 +181,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 270px;
 }
 
 .flex:nth-of-type(even) {
@@ -188,6 +190,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 270px;
 }
 
 .flex:nth-of-type(odd) svg {

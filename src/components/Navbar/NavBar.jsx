@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import styles from "./style.module.css";
 import { Link } from "react-router-dom";
 import MobileNavBar from "./MobileNavBar";
+import logo from "../../assets/logo.png";
 
 export default function NavBar() {
   const [isSidebar, setIsSidebar] = useState(false);
@@ -17,7 +18,7 @@ export default function NavBar() {
   }
   return (
     <nav className={styles.nav}>
-      TJIF
+      <img src={logo} alt='' />
       <ul>
         <li>
           <Link to='/'>Home</Link>

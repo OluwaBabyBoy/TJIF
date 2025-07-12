@@ -83,8 +83,9 @@
 }
 
 .container3 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 32px;
 }
 
@@ -97,6 +98,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   height: fit-content;
+  width: 355px;
 }
 
 .div:hover {
@@ -240,5 +242,9 @@
 
   .button {
     justify-content: center;
+  }
+
+  .div {
+    width: 320px;
   }
 }
