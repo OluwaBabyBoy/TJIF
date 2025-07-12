@@ -83,7 +83,7 @@
 
 .container3 {
   display: grid;
-  grid-template-columns: repeat(3, 350px);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 32px;
 }
 
@@ -217,4 +217,25 @@
     var(--color-purple)
   );
   transition: width 0.3s ease;
+}
+
+@media only screen and (max-width: 768px) {
+  .program {
+    padding: 50px 24px;
+    top: 60px;
+  }
+
+  .container > h2 {
+    font-size: 24px;
+  }
+
+  .container h2::after {
+    width: 75px;
+    top: 40px;
+  }
+  .container p {
+    width: -webkit-fill-available;
+    font-size: 16px;
+    margin-top: 10px;
+  }
 }

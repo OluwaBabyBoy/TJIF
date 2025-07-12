@@ -2,6 +2,7 @@
 
 import React from "react";
 import styles from "./style.module.css";
+import { Link } from "react-router-dom";
 
 export default function Transform() {
   return (
@@ -16,7 +17,9 @@ export default function Transform() {
 
         <div className={styles.buttons}>
           <button className={styles.impact}>Get Started Today</button>
-          <button className={styles.mission}>Contact Us</button>
+          <button className={styles.mission}>
+            <Link to='/contact'>Contact Us</Link>
+          </button>
         </div>
       </div>
       <div className={styles.svg2}>

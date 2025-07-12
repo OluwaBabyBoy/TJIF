@@ -133,3 +133,53 @@
 .email input::placeholder {
   font-weight: 700;
 }
+
+@media only screen and (max-width: 768px) {
+  .contact {
+    padding: 50px 24px;
+    top: 60px;
+  }
+
+  .container > h2 {
+    font-size: 24px;
+  }
+
+  .container h2::after {
+    width: 75px;
+    top: 30px;
+    right: 28%;
+  }
+
+  .container p {
+    width: -webkit-fill-available;
+    font-size: 16px;
+  }
+
+  .message {
+    width: -webkit-fill-available;
+    padding: 16px;
+  }
+
+  .message h2 {
+    font-size: 18px;
+  }
+
+  .div {
+    flex-direction: column;
+    width: -webkit-fill-available;
+  }
+
+  .div div,
+  .email {
+    width: -webkit-fill-available;
+  }
+
+  .form button {
+    font-size: 16px;
+  }
+
+  .div div input,
+  .email input {
+    padding: 16px 24px;
+  }
+}

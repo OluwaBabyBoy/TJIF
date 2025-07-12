@@ -74,7 +74,7 @@
 
 @media only screen and (max-width: 768px) {
   .nav {
-    padding: 17px 60px;
+    padding: 17px 35px;
   }
   .svg {
     display: block;
@@ -137,7 +137,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 17px 60px;
+    padding: 17px 35px;
     background-color: white;
     box-shadow: 0px 4px 7px hsla(0, 0%, 0%, 0.09);
   }

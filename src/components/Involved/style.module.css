@@ -53,7 +53,7 @@
 .div {
   margin-top: 30px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 24px;
 }
 
@@ -130,7 +130,7 @@
 
 .donate {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   gap: 16px;
 }
 
@@ -232,14 +232,58 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 97px 160px;
+  padding: 97px 120px;
   position: absolute;
   right: 0;
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
+  height: -webkit-fill-available;
 }
 
 .svg2 svg {
   width: 100px;
   height: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .involve {
+    top: 60px;
+    padding: 50px 24px;
+  }
+
+  .container p {
+    width: -webkit-fill-available;
+    font-size: 16px;
+  }
+  .lives {
+    margin-bottom: 100px;
+    padding: 50px 24px;
+    gap: 24px;
+  }
+
+  .lives h2 {
+    font-size: 24px;
+  }
+
+  .lives span {
+    width: -webkit-fill-available;
+    font-size: 14px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    width: -webkit-fill-available;
+  }
+
+  .buttons button {
+    width: -webkit-fill-available;
+  }
+  .svg2 {
+    padding: 40px 138px;
+    border-bottom-left-radius: 16px;
+    border-top-right-radius: 0;
+    margin-top: 355px;
+    width: -webkit-fill-available;
+    height: auto;
+  }
 }
