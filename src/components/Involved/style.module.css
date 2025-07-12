@@ -64,6 +64,7 @@
   background-color: var(--color-purple);
   border-radius: 16px;
   box-shadow: 0px 4px 7px hsla(0, 0%, 0%, 0.09);
+  height: fit-content;
 }
 
 .container2:nth-of-type(even) {
@@ -251,6 +252,16 @@
     padding: 50px 24px;
   }
 
+  .container > h2 {
+    font-size: 24px;
+  }
+
+  .container h2::after {
+    width: 50px;
+    top: 30px;
+    right: 35%;
+  }
+
   .container p {
     width: -webkit-fill-available;
     font-size: 16px;
@@ -277,6 +288,8 @@
 
   .buttons button {
     width: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
   }
   .svg2 {
     padding: 40px 138px;

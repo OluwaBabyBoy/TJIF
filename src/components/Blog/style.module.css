@@ -95,6 +95,7 @@
   box-shadow: 0 4px 7px hsla(0, 4%, 0%, 0.09);
   cursor: pointer;
   transition: all 0.3s ease;
+  height: fit-content;
 }
 
 .div:nth-of-type(even) {
@@ -230,8 +231,8 @@
   }
 
   .container h2::after {
-    width: 75px;
-    top: 40px;
+    width: 50px;
+    top: 30px;
   }
   .container p {
     width: -webkit-fill-available;

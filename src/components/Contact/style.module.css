@@ -145,7 +145,7 @@
   }
 
   .container h2::after {
-    width: 75px;
+    width: 50px;
     top: 30px;
     right: 28%;
   }
