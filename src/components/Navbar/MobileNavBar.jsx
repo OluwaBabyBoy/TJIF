@@ -3,6 +3,7 @@
 import React from "react";
 import styles from "./style.module.css";
 import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png";
 
 export default function MobileNavBar({ isSidebar, onClose }) {
   return (
@@ -12,7 +13,7 @@ export default function MobileNavBar({ isSidebar, onClose }) {
       }`}
     >
       <div className={styles.close}>
-        <span>TJIF</span>
+        <img src={logo} alt='' />
         <svg
           className={`${isSidebar ? styles.active : styles["fade-out"]}`}
           onClick={onClose}
