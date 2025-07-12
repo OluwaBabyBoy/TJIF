@@ -34,8 +34,8 @@ export default function Home() {
 
         <img src={image} alt='' />
       </div>
-      {/* <Reach />
-      <About />
+      <Reach />
+      {/* <About />
       <Programs />
       <Involve />
       <Blog />

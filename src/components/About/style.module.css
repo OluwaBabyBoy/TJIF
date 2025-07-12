@@ -171,6 +171,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
+  flex-wrap: wrap;
 }
 
 .flex:nth-of-type(odd) {
@@ -228,4 +229,50 @@
   font-family: var(--font-lato);
   color: var(--color-text);
   font-weight: 400;
+}
+
+@media only screen and (max-width: 768px) {
+  .about {
+    padding: 50px 24px;
+    top: 60px;
+  }
+
+  .about > h2 {
+    font-size: 35px;
+  }
+  .about > h2::after {
+    width: 75px;
+    top: 50px;
+  }
+
+  .about > p {
+    width: -webkit-fill-available;
+    font-weight: 500;
+  }
+
+  .vision {
+    flex-direction: column;
+  }
+
+  .h2 h2 {
+    font-size: 24px;
+  }
+
+  .h2 p {
+    font-size: 14px;
+  }
+
+  .education h3,
+  .div h3 {
+    font-size: 16px;
+  }
+
+  .education span,
+  .div p {
+    font-size: 12px;
+  }
+
+  .container3 {
+    margin-top: 30px;
+  }
 }
