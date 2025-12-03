@@ -5,27 +5,27 @@ import styles from "./style.module.css";
 
 export default function Leadership() {
   const Leaders = [
-    {
-      h4: "Dr. John Doe",
-      span: "Executive Manager",
-      p: "25+ years in international development and humanitarian work.",
-    },
+    // {
+    //   h4: "Dr. John Doe",
+    //   span: "Executive Manager",
+    //   p: "25+ years in international development and humanitarian work.",
+    // },
 
-    {
-      h4: "James Doe",
-      span: "Programs Director",
-      p: "Former UN program manager with expertise in sustainable development.",
-    },
-    {
-      h4: "Mit Joe",
-      span: "Education Lead",
-      p: "Specialist in community-based education and literacy programs.",
-    },
-    {
-      h4: "Joe Jane",
-      span: "Partnerships Director",
-      p: "Building strategic alliances for maximum global impact.",
-    },
+    // {
+    //   h4: "James Doe",
+    //   span: "Programs Director",
+    //   p: "Former UN program manager with expertise in sustainable development.",
+    // },
+    // {
+    //   h4: "Mit Joe",
+    //   span: "Education Lead",
+    //   p: "Specialist in community-based education and literacy programs.",
+    // },
+    // {
+    //   h4: "Joe Jane",
+    //   span: "Partnerships Director",
+    //   p: "Building strategic alliances for maximum global impact.",
+    // },
     // {
     //   h4: "Anna Smith",
     //   span: "Finance Manager",
