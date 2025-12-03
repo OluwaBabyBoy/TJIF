@@ -26,6 +26,11 @@ export default function Leadership() {
       span: "Partnerships Director",
       p: "Building strategic alliances for maximum global impact.",
     },
+    {
+      h4: "Anna Smith",
+      span: "Finance Manager",
+      p: "Ensuring transparency and accountability in all financial matters.",
+    }
   ];
   return (
     <div className={styles.leader}>
